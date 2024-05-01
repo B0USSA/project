@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TestController!{% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+    {% for user in users %}
+        <h1>{{ user.id }}:</h1><br>
+        {{ user.name }}<br>
+        {{ user.age }}<br>
+        {{ user.gender }}<br>
+    {% endfor %}
+</div>
+{% endblock %}
